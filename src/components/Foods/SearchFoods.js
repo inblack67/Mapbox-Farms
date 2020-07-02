@@ -22,8 +22,10 @@ const SearchFoods = () => {
     const onSubmit = e => {
         e.preventDefault();
         const newSearch = {
-            category: category.split('')[0].toUpperCase() + category.slice(1),
-            item: item.split('')[0].toUpperCase() + item.slice(1),
+
+            category: category.toLowerCase().split('')[0].toUpperCase() + category.slice(1),
+
+            item: item.toLowerCase().split('')[0].toUpperCase() + item.slice(1),
         }
         getFoods(newSearch);
         setFormData({

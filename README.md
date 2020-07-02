@@ -1,6 +1,6 @@
 ## Description
 
-This web application service that tells the user what types of food trucks might be found near a specific location on a map.
+This web application provied a service that tells the user what types of food trucks might be found near a specific location on a map. The user can search the food by it's category (eg. Fruit) and name (eg. Peaches)
 
 ## Stack
 
@@ -21,7 +21,7 @@ This application is deployed on Netlify and is now live on the Internet. [Explor
 
 ## Major Works
 
-Explore my one of the major work on MERN(MongoDB, Express, React.JS, Node.JS) Stack. It's a fullstack javascript web application named BootCamps where you can explore the Bootcamps, review them or choose the best fit for you, by location, money, courses etc. Or, publish a new Bootcamp and manage it by adding courses, photo and what not. It's been deployed to heroku (backend) and Netlify (frontend). [Explore](https://bootcamps.netlify.app/)
+Explore one of my major works on MERN(MongoDB, Express, React.JS, Node.JS) Stack. It's a fullstack javascript web application named BootCamps where you can explore the Bootcamps, review them or choose the best fit for you, by location, money, courses etc. Or, publish a new Bootcamp and manage it by adding courses, photo and what not. It's been deployed to heroku (backend) and Netlify (frontend). [Explore](https://bootcamps.netlify.app/)
 
 
 ## Website
