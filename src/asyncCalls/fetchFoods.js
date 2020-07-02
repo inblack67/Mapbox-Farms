@@ -3,7 +3,7 @@ import M from 'materialize-css/dist/js/materialize.min.js';
 
 export default async ({ category, item }) => {
     try {
-        return await axios(`https://data.ct.gov/resource/y6p2-px9.json?category=${category}&item=${item}`);
+        return await axios(`https://data.ct.gov/resource/y6p2-px98.json?category=${category}&item=${item}`);
     } catch (err) {
 
         if(err.response){
