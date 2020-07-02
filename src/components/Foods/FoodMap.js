@@ -66,7 +66,7 @@ const Map = () => {
                     <span className="red-text">Address: </span> { `${selectedFarm.location_1_address} ${selectedFarm.zipcode}` }
                     </p>
                     <p>
-                        <span className="red-text">Category: </span> { selectedFarm.category }
+                        <span className="red-text">Category: </span> { `${selectedFarm.category} (${selectedFarm.item})` }
                     </p>
                 </div>
             </Popup> }

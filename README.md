@@ -21,7 +21,7 @@ This application is deployed on Netlify and is now live on the Internet. [Explor
 
 ## Major Works
 
-Explore one of my major works on MERN(MongoDB, Express, React.JS, Node.JS) Stack. It's a fullstack javascript web application named BootCamps where you can explore the Bootcamps, review them or choose the best fit for you, by location, money, courses etc. Or, publish a new Bootcamp and manage it by adding courses, photo and what not. It's been deployed to heroku (backend) and Netlify (frontend). [Explore](https://bootcamps.netlify.app/)
+Explore one of my major works on MERN(MongoDB, Express, React.JS, Node.JS) Stack. It's a fullstack javascript web application named BootCamps where you can explore the Bootcamps, review them or choose the best fit for you, by location, money, courses etc. Or, publish a new Bootcamp and manage it by adding courses, photo and what not. It's been deployed to heroku. [Explore](https://vast-peak-56244.herokuapp.com/) [Code](https://github.com/inblack67/Bootcamps-MERN-2.0)
 
 
 ## Website
