@@ -4,7 +4,7 @@ This web application service that tells the user what types of food trucks might
 
 ## Stack
 
-This is a frontend progressive web application which is built on top of React.JS along with Materialize CSS as the UI and Mapbox Map Library. The application consumes the services of [DataSF's SODA API](https://datasf.org/). It is also a PWA with SEO principles. Generate the lighthouse report in the console menu to witness the score. 
+This is a frontend progressive web application which is built on top of React.JS with Context API State Managment, Hooks, ES6+ syntax along with Materialize CSS as the UI and Mapbox Map Library. The application consumes the services of [DataSF's SODA API](https://datasf.org/). It is also a PWA with SEO principles. Generate the lighthouse report in the console menu to witness the score. 
 
 ## Tests
 
@@ -12,11 +12,11 @@ The tests are also written for components rendering and async ajax calls. Instea
 
 ## Code
 
-Follow along the [Code](https://github.com/inblack67/Mapbox-Food-Trucks)
+Follow along the [Code](https://github.com/inblack67/Mapbox-Food-Trucks).
 
 ## Deployed
 
-This application is deployed on Netlify and is now live on the Internet [Explore](https://food-trucks.netlify.app/)
+This application is deployed on Netlify and is now live on the Internet. [Explore](https://food-trucks.netlify.app/)
 
 
 ## Major Works
@@ -25,7 +25,7 @@ Explore my one of the major work on MERN(MongoDB, Express, React.JS, Node.JS) St
 
 
 ## Website
-Checkout my website for my other JavaScript works [Explore](https://inblack67.netlify.app/)
+Checkout my website for my other JavaScript works. [Explore](https://inblack67.netlify.app/)
 
 
 ## create-react-app
