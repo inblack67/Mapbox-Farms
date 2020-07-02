@@ -63,13 +63,7 @@ const Map = () => {
                     <span className="red-text">Phone: </span> { selectedFarm.phone1 }
                     </p>
                     <p>
-                    <span className="red-text">Address: </span> { selectedFarm.location_1_address }
-                    </p>
-                    <p>
-                    <span className="red-text">Zipcode: </span> { selectedFarm.zipcode }
-                    </p>
-                    <p>
-                    <span className="red-text">Item: </span> { selectedFarm.item }
+                    <span className="red-text">Address: </span> { `${selectedFarm.location_1_address} ${selectedFarm.zipcode}` }
                     </p>
                     <p>
                         <span className="red-text">Category: </span> { selectedFarm.category }

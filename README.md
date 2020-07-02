@@ -1,68 +1,50 @@
+## Description
+
+This web application service that tells the user what types of food trucks might be found near a specific location on a map.
+
+## Stack
+
+This is a frontend progressive web application which is built on top of React.JS along with Materialize CSS as the UI and Mapbox Map Library. The application consumes the services of [DataSF's SODA API](https://datasf.org/). It is also a PWA with SEO principles. Generate the lighthouse report in the console menu to witness the score. 
+
+## Tests
+
+The tests are also written for components rendering and async ajax calls. Instead of mocking axios or fetch, I have used Mock Service Worker as recently suggested by Kent C Dodds - creator of React Testing Library and ton of other packages.
+
+## Code
+
+Follow along the [Code](https://github.com/inblack67/Mapbox-Food-Trucks)
+
+## Deployed
+
+This application is deployed on Netlify and is now live on the Internet [Explore](https://food-trucks.netlify.app/)
+
+
+## Major Works
+
+Explore my one of the major work on MERN(MongoDB, Express, React.JS, Node.JS) Stack. It's a fullstack javascript web application named BootCamps where you can explore the Bootcamps, review them or choose the best fit for you, by location, money, courses etc. Or, publish a new Bootcamp and manage it by adding courses, photo and what not. It's been deployed to heroku (backend) and Netlify (frontend). [Explore](https://bootcamps.netlify.app/)
+
+
+## Website
+Checkout my website for my other JavaScript works [Explore](https://inblack67.netlify.app/)
+
+
+## create-react-app
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
 In the project directory, you can run:
 
+### `yarn`
+
+To install all the dependencies (node_modules etc.)
+
 ### `yarn start`
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
 ### `yarn test`
 
 Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
