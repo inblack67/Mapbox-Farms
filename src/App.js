@@ -9,13 +9,13 @@ import FoodMap from './components/Foods/FoodMap'
 function App() {
 
   useEffect(() => {
-    // MJS init
+    // Materialize JS init
     M.AutoInit();
   });
 
   return (
     <FoodState>
-      <div className="App">
+      <div className="App black">
         <FoodMap />
         <SearchFoods />
       </div>

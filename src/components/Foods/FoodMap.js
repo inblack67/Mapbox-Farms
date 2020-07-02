@@ -1,15 +1,29 @@
-import React, { useState, useContext } from 'react'
+import React, { useState, useContext, useEffect } from 'react'
 import ReactMapGL, { Marker, Popup } from 'react-map-gl'
 import FoodContext from '../../context/foods/foodContext'
 import Preloader from '../Preloader'
 
 const Map = () => {
 
+    useEffect(() => {
+        const listner = e => {
+            if(e.key === 'Escape'){
+              setSelectedFarm(null)
+            }
+          }
+      
+          window.addEventListener('keydown', listner)
+      
+          return () => {
+            window.removeEventListener('keydown', listner)
+          }
+    })
+
     const [viewPort, setViewPort] = useState({
         latitude: 41.61609643000048,
         longitude: -72.82920259099967,
         width: "100vw",
-        height: "80vh",
+        height: "50vh",
         zoom: 10
       })
 
@@ -45,9 +59,15 @@ const Map = () => {
                     <p>
                     <span className="red-text">Name: </span> { selectedFarm.farm_name }
                     </p>
-                    <h6>
+                    <p>
+                    <span className="red-text">Phone: </span> { selectedFarm.phone1 }
+                    </p>
+                    <p>
                     <span className="red-text">Address: </span> { selectedFarm.location_1_address }
-                    </h6>
+                    </p>
+                    <p>
+                    <span className="red-text">Zipcode: </span> { selectedFarm.zipcode }
+                    </p>
                     <p>
                     <span className="red-text">Item: </span> { selectedFarm.item }
                     </p>

@@ -1,9 +1,7 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.App{
+    min-height: 100vh;
 }
 
-.text-center{
-    text-align: center;
+.input-field input{
+    color: white;
 }

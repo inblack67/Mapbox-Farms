@@ -1,10 +1,11 @@
-import React from 'react'
+import React from 'react';
+import './Preloader.css';
 
 const Preloader = () => {
     return (
-      <div className="container center" style={{'marginTop': '15rem'}}>
+      <div id='preloader'>
         <div className="preloader-wrapper big active">
-        <div className="spinner-layer spinner-blue-only">
+        <div className="spinner-layer spinner-red-only">
           <div className="circle-clipper left">
             <div className="circle"></div>
           </div><div className="gap-patch">

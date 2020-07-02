@@ -21,23 +21,34 @@ const SearchFoods = () => {
 
     const onSubmit = e => {
         e.preventDefault();
-        getFoods(formData);
+        const newSearch = {
+            category: category.split('')[0].toUpperCase() + category.slice(1),
+            item: item.split('')[0].toUpperCase() + item.slice(1),
+        }
+        getFoods(newSearch);
+        setFormData({
+            category: '',
+            item: ''
+        });
     }
 
     const { category, item } = formData;
 
     return (
         <div className="container">
-            <form onSubmit={onSubmit}>
+            <p className="flow-text center white-text">Search Your Food</p>
+            <form onSubmit={onSubmit} data-testid='submit'>
 
                 <div className="input-field">
                     <input type="text" name='category' value={category} required onChange={onChange}/>
-                    <label htmlFor="category">Foods Category</label>
+                    <label htmlFor="category">Food Category</label>
+                    <span className="helper-text white-text">eg. Fruit</span>
                 </div>
 
                 <div className="input-field">
                     <input type="text" name='item' value={item} required onChange={onChange}/>
                     <label htmlFor="item">Foods Item</label>
+                    <span className="helper-text white-text">eg. Apples</span>
                 </div>
 
                 <div className="input-field">

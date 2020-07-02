@@ -2,7 +2,7 @@ import React, { useReducer } from 'react';
 import { GET_FOODS } from '../types';
 import FoodReducer from './foodReducer';
 import FoodContext from './foodContext';
-import axios from 'axios'
+import fetchFoods from '../../asyncCalls/fetchFoods'
 
 const FoodState = (props) => {
 
@@ -15,7 +15,7 @@ const FoodState = (props) => {
 
     const getFoods = async ({ category, item }) => {
         try {
-            const res = await axios(`https://data.ct.gov/resource/y6p2-px98.json?category=${category}&item=${item}`);
+            const res = await fetchFoods({ category, item });
 
             dispatch({
                 type: GET_FOODS,
