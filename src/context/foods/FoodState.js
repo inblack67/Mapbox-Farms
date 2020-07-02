@@ -3,6 +3,7 @@ import { GET_FOODS } from '../types';
 import FoodReducer from './foodReducer';
 import FoodContext from './foodContext';
 import fetchFoods from '../../asyncCalls/fetchFoods'
+import M from 'materialize-css/dist/js/materialize.min.js';
 
 const FoodState = (props) => {
 
@@ -17,12 +18,20 @@ const FoodState = (props) => {
         try {
             const res = await fetchFoods({ category, item });
 
+            if(res.data.length === 0){
+                M.toast({ html: 'Nothing Found' });
+            }
+
             dispatch({
                 type: GET_FOODS,
                 payload: res.data
             });
+            
         } catch (err) {
-            console.error(err)
+            if(err.response){
+                M.toast({ html: `${err.response.status} Error` })
+            }
+            console.error(err);
         }
     }
 
