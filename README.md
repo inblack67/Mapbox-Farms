@@ -1,6 +1,6 @@
 ## Description
 
-This web application provied a service that tells the user what types of food trucks might be found near a specific location on a map.
+This web application provied a service that tells the user what types of food trucks might be found near a specific location on a map. It display around 1000 farms but the view is not at all sluggish as the application takes advantage of Mapbox Clustering.
 
 ## Stack
 

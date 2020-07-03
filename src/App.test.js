@@ -1,27 +1,5 @@
-import React from 'react';
-import { render, screen } from '@testing-library/react';
-import App from './App';
-import AllFoodsMap from './components/Foods/AllFoodsMap'
-import FoodState from './context/foods/FoodState'
 import fetchFoods from './asyncCalls/fetchFoods';
 import fetchAllFoods from './asyncCalls/fetchAllFoods';
-
-const renderWithContext = (component) => {
-    return render(<FoodState>
-        {component}
-    </FoodState>)
-}
-
-it('renders App component correctly', () => {
-    const {asFragment} = render(<App />);
-    expect(asFragment).toMatchSnapshot();
-});
-
-it('renders FoodMap component correctly', () => {
-    const {asFragment} = renderWithContext(<AllFoodsMap />);
-
-    expect(asFragment).toMatchSnapshot();
-});
 
 it('fetches all food trucks/farms', async () => {
     const res = await fetchAllFoods();

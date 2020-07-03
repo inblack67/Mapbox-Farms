@@ -20,10 +20,6 @@ const FoodState = (props) => {
 
             const data = res.data;
 
-            if(data.length === 0){
-                M.toast({ html: 'Nothing Found' });
-            }
-
             dispatch({
                 type: GET_ALL_FOODS,
                 payload: data
