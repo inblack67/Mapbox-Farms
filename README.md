@@ -1,6 +1,6 @@
 ## Description
 
-This web application provied a service that tells the user what types of food trucks might be found near a specific location on a map. The user can search the food by it's category (eg. Fruit) and name (eg. Peaches)
+This web application provied a service that tells the user what types of food trucks might be found near a specific location on a map.
 
 ## Stack
 

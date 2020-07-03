@@ -10,6 +10,14 @@ const server = setupServer(
       ])
     )
   }),
+  rest.get(`https://data.ct.gov/resource/hma6-9xbg.json`, (req, res, context) => {
+    return res(
+      context.status(200),
+      context.json([
+        { category: 'Farm Products', item: 'Hay', location_1: { longitude: '-71.98244322', latitude: '41.3253323' }}
+      ])
+    )
+  }),
 
   rest.get('*', (req, res, context) => {
     return res(
