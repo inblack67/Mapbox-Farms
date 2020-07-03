@@ -2,7 +2,6 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import App from './App';
 import AllFoodsMap from './components/Foods/AllFoodsMap'
-import SearchFoods from './components/Foods/SearchFoods'
 import FoodState from './context/foods/FoodState'
 import fetchFoods from './asyncCalls/fetchFoods';
 import fetchAllFoods from './asyncCalls/fetchAllFoods';
@@ -18,11 +17,6 @@ it('renders App component correctly', () => {
     expect(asFragment).toMatchSnapshot();
 });
 
-it('renders SearchFoods component correctly', () => {
-    const {asFragment} = renderWithContext(<SearchFoods />);
-
-    expect(asFragment).toMatchSnapshot();
-});
 it('renders FoodMap component correctly', () => {
     const {asFragment} = renderWithContext(<AllFoodsMap />);
 

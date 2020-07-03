@@ -3,5 +3,3 @@
 exports[`renders App component correctly 1`] = `[Function]`;
 
 exports[`renders FoodMap component correctly 1`] = `[Function]`;
-
-exports[`renders SearchFoods component correctly 1`] = `[Function]`;
