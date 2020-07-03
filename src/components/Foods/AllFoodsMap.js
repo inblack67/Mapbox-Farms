@@ -80,7 +80,7 @@ if(cluster.properties.cluster){
     return <Marker key={index} latitude={latitude} longitude={longitude}>
         <div className="container">
             <button className="btn red" onClick={ e => {
-                const expansion = Math.min(supercluster.getClusterExpansionZoom(cluster.id), 10)
+                const expansion = Math.min(supercluster.getClusterExpansionZoom(cluster.id), 20)
 
                 setViewPort({
                     ...viewPort,
