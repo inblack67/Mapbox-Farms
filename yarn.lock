@@ -10583,6 +10583,13 @@ use-deep-compare-effect@^1.3.1:
     "@types/use-deep-compare-effect" "^1.2.0"
     dequal "^1.0.0"
 
+use-mock-service-worker@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/use-mock-service-worker/-/use-mock-service-worker-0.1.0.tgz#6b3580bd3c6f90c7e8eedf93a719ab5d1fca42c1"
+  integrity sha512-FyDSAySBU2cNoNw72KyRuj8W7/uypQhuVuddSpSi32A1k3bA2zBM4idkF6/MRwOsL3eQ9HDClglUvUThfKwQeg==
+  dependencies:
+    msw "^0.19.5"
+
 use-supercluster@^0.2.8:
   version "0.2.8"
   resolved "https://registry.yarnpkg.com/use-supercluster/-/use-supercluster-0.2.8.tgz#f60a19c63596fd86d36a573b820fc3406aae4059"
